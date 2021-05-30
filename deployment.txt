@@ -1,0 +1,23 @@
+https://devcenter.heroku.com/articles/getting-started-with-nodejs#set-up
+
+
+I have used heroku server to deploy my node js project Newsletter-signup
+
+    STEPS TO DEPLOY ON HEROKU  
+    -------------------------
+
+1. download heroku CLI (command line interface) or ignore if already installed
+
+2. we need to change our port in app.listen() to process.env.PORT from local host(e.g.3000).
+   process.env.PORT is a dynamic port that is defined by heroku .It allow
+   us to work seemlessly with their system .
+
+    process.evv.PORT || 3000  : in order to work our app both on heroku and local system 
+
+3. create a file named Procfile and start the process by writing ( web : node app.js  )
+    in order to tell heroku how to launch our app and which file contains our server code
+
+4. next step to save our work to git 
+    i) git init   : intitializes a brand new git repository
+    ii) git add . 
+    iii) git commit -m "first commit"
