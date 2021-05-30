@@ -6,7 +6,9 @@ I have used heroku server to deploy my node js project Newsletter-signup
     STEPS TO DEPLOY ON HEROKU  
     -------------------------
 
-1. download heroku CLI (command line interface) or ignore if already installed
+1. download heroku CLI (command line interface) or ignore if already installed,and write below commands
+   heroku --version
+   heroku login
 
 2. we need to change our port in app.listen() to process.env.PORT from local host(e.g.3000).
    process.env.PORT is a dynamic port that is defined by heroku .It allow
@@ -21,3 +23,9 @@ I have used heroku server to deploy my node js project Newsletter-signup
     i) git init   : intitializes a brand new git repository
     ii) git add . 
     iii) git commit -m "first commit"
+
+5. Now we have to create an new app on heroku by writing command :
+   heroku create
+    Now ,our brand new container/server is created at the address shown in blue color on terminal
+
+6. command : git push heroku master

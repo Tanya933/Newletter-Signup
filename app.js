@@ -54,7 +54,7 @@ app.post("/",function(req,res){
             });
     })
 
-    // request.write(jsonData);
+    request.write(jsonData);
     request.end() ;
 
     // console.log(firstName,lastName,email) ;
@@ -68,7 +68,7 @@ app.post("/failure",function(req,res){
 
 
 //setting new express app to listen to port 3000
-app.listen(process.env.PORT || 3000,function(){ 
+app.listen(process.env.PORT || 3000 ,function(){ 
     console.log("Server is running on port 3000") ;
 })
 
