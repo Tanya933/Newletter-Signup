@@ -1,3 +1,0 @@
-I have used mailchimp for API purpose
-
-https://us6.admin.mailchimp.com/lists/members?id=665265#p:1-s:25-sa:last_update_time-so:false
